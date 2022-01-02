@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>game</title>
+        <meta charset="UTF_8">
+        <script>
+
+            function LargeScreen () {
+                var nLargeurMax = window.screen.availWidth;
+                var nHauteurMax = window.screen.availHeight;
+                window.open("","", "fullscreen=yes, scrollbars=auto, left=0,top=0, width="+nLargeurMax+", height="+nHauteurMax);
+            }
+
+            var userName = localStorage.getItem("userName");
+            if (userName==null) {
+                userName = "";
+            }
+
+            function score () {
+                var score = 0;
+            }
+        </script>
+    </head>
+    <body onload="LargeScreen ()">
+        <span id="score">score : </span>
+    </body>
+</html>
